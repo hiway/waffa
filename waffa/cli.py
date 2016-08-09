@@ -11,4 +11,4 @@ def cli(query):
     try:
         print(next(result.results).text)
     except StopIteration:
-        print([dir(r) for r in result.results])
+        print('No results')
